@@ -1,0 +1,8 @@
+# WorkBuddy 项目数据（非网站内容）
+.workbuddy-ai/
+
+# 系统与编辑器
+Thumbs.db
+.DS_Store
+desktop.ini
+*.log
