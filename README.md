@@ -7,7 +7,9 @@
 
 ## 在线访问
 
-> 部署后填写 GitHub Pages 地址
+> **https://wumeng1432.github.io/communication-principles-review/**
+
+[![站点状态](https://img.shields.io/badge/GitHub%20Pages-online-2ea44f)](https://wumeng1432.github.io/communication-principles-review/)
 
 ## 内容结构
 
