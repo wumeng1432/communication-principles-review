@@ -164,6 +164,28 @@ function viewAnalysis() {
   </div>
 
   <div class="section">
+    <div class="card red">
+      <h3><span class="ic">🔍</span>关于「历年真题」的检索结论</h3>
+      <div class="note" style="background:#fdecec;border-color:#f8d7d7;color:#8f1d1d;margin-bottom:14px">
+        <b>${REALITY_CHECK.summary}</b>
+      </div>
+      ${REALITY_CHECK.reasons.map(r => `
+        <div class="kv"><div class="kt">${r.t}</div><div class="kd">${r.d}</div></div>`).join("")}
+
+      <details class="ex" style="margin-top:12px">
+        <summary><span class="tag r">证据</span> 为什么说那些「民大试卷」是 AI 生成的？</summary>
+        <div class="exbody">
+          <p style="margin-bottom:8px">某文库上一篇标题为《中南民族大学〈通信原理〉2025-2026学年期末试卷（A卷）》的文档，正文中残留了以下文字——这些是写给 AI 的生成指令，本不该出现在试卷里：</p>
+          ${REALITY_CHECK.evidence.map(e => `<div class="kv"><div class="kd">${e}</div></div>`).join("")}
+        </div>
+      </details>
+
+      <h3 style="margin-top:18px;font-size:14.5px"><span class="ic">✓</span>那该怎么复习？</h3>
+      <ul class="clean check">${REALITY_CHECK.advice.map(a => `<li>${a}</li>`).join("")}</ul>
+    </div>
+  </div>
+
+  <div class="section">
     <div class="card">
       <h3><span class="ic">📋</span>典型题型与分值分布</h3>
       <table class="tb">
